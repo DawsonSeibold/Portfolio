@@ -76,7 +76,7 @@ section.main_section {
      margin-left: 12%;
 }
 .name_text {
-     font-family: Arial Black;
+     font-family: 'Arial Black', 'Arial Bold', 'Open Sans';
      font-weight: 600;
      font-size: 20pt;
      color: var(--main-color);
