@@ -1,0 +1,131 @@
+
+:root {
+     --main-color: #FFFFFF;
+     --grad-color: #dec98e;
+}
+html {
+     background-color: #1C1C1C;
+}
+body {
+     margin: 0px;
+     padding: 0px;
+     background: url('..//images/wood_background_big.jpg');
+}
+
+section.main_section {
+     /* background: url('..//images/wood_background_big.jpg'); */
+     width: 100vw;
+     height: 100vh;
+     padding: 0.1px;
+}
+
+#main_text_container {
+     position: relative;
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+     margin-top: 20%;
+     margin-left: 10%;
+}
+.class_text {
+     font-family: 'amsterdamregular';
+     color: var(--main-color);
+     font-size: 30pt;
+     margin: 0;
+     transform: rotate(-10deg);
+     width: 2.22in;
+}
+
+.year_text {
+     font-family: 'sketch_3dregular';
+     color: var(--grad-color);
+     font-size: 80pt;
+     font-weight: 200;
+     margin: 0;
+     margin-left: 0.37in;
+     margin-top: -0.49in;
+}
+.grad_hat {
+     width: 2in;
+     fill: var(--grad-color);
+     top: -0.23in;
+     left: 2.169in;
+     position: absolute;
+}
+#main_image_container {
+     position: absolute;
+     right: 20%;
+     top: 39%;
+}
+#main_image {
+     width: 2.153in;
+     border: 6px white solid;
+     border-radius: 7px;
+     transform: rotate(8deg); /*11deg*/
+     z-index: 2;
+}
+
+#event_text_container {
+     display: flex;
+     flex-direction: column;
+     margin-top: 10%;
+     margin-left: 12%;
+}
+.name_text {
+     font-family: Arial Black;
+     font-weight: 600;
+     font-size: 20pt;
+     color: var(--main-color);
+     text-transform: uppercase;
+     margin: 0;
+}
+.event_container {
+     display: flex;
+}
+.event_text_padding {
+     margin-top: 0.138in;
+     margin-bottom: 0.138in;
+}
+.event_information_text {
+     font-family: Open Sans;
+     font-weight: 800;
+     font-size: 16pt;
+     color: var(--main-color);
+     margin: 0;
+}
+.text_devider {
+     color: var(--grad-color);
+     font-size: 16pt;
+     font-family: Open Sans;
+     font-weight: 800;
+     margin: 0;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+
+.bear_claw {
+
+}
+.bear_claw.background {
+     /* width: 1.557in; */
+     width: 1.857in;
+     z-index: 1;
+     opacity: 0.71;
+     transform: rotate(-21deg); /*-10deg*/
+     position: absolute;
+     /* right: 50px;
+     top: 167px; */
+     right: 97px;
+     top: 160px;
+}
+.bear_claw.foreground {
+     width: 2.163in;
+     /* box-shadow: inset 6px 5px 13px #989797; */
+     /* opacity: 0.9; */
+     z-index: 3;
+     position: absolute;
+     /* right: -10px;
+     bottom: 0px; */
+     right: 170px;
+     bottom: 60px;
+}
