@@ -114,7 +114,10 @@ section.main_section {
      /* width: 1.557in; */
      width: 1.857in;
      z-index: 1;
-     opacity: 0.71;
+     opacity: unset;
+     opacity: 0.71 !important;
+     /* opacity: 0; */
+     /* animation: bear_claw_aniamtion_in; */
      transform: rotate(-21deg); /*-10deg*/
      position: absolute;
      /* right: 50px;
@@ -132,4 +135,16 @@ section.main_section {
      bottom: 0px; */
      right: 170px;
      bottom: 60px;
+}
+
+@keyframes bear_claw_aniamtion_in {
+     0% { opacity: 0.0; }
+     100% { opacity: 0.71; }
+}
+
+.bear_claw_aniamtion_in {
+  -webkit-animation-name: bear_claw_aniamtion_in;
+  animation-name: bear_claw_aniamtion_in;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
